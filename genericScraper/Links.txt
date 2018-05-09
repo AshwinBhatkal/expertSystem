@@ -1,0 +1,13 @@
+https://en.wikipedia.org/wiki/Ionic_(mobile_app_framework)
+
+https://ionicframework.com/docs/intro/installation/
+
+https://ionicframework.com/docs/intro/migration/
+
+https://ionicframework.com/docs/intro/concepts/
+
+https://ionicframework.com/docs/components/#button-sizes
+
+https://ionicframework.com/docs/api/ - Not added
+
+https://ionicframework.com/docs/storage/

@@ -1,0 +1,109 @@
+[2018-05-09T07:26:03,371][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-09T07:26:03,454][INFO ][o.e.e.NodeEnvironment    ] [UeqWV9L] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [169.6gb], net total_space [233.5gb], types [apfs]
+[2018-05-09T07:26:03,455][INFO ][o.e.e.NodeEnvironment    ] [UeqWV9L] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-05-09T07:26:03,458][INFO ][o.e.n.Node               ] node name [UeqWV9L] derived from node ID [UeqWV9L_SNewuhESMrqh6g]; set [node.name] to override
+[2018-05-09T07:26:03,458][INFO ][o.e.n.Node               ] version[6.2.3], pid[5253], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.13.4/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/9.0.4/9.0.4+11]
+[2018-05-09T07:26:03,459][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/1g/jsdyfdfn3pjftjqpd6w10sfr5y75qs/T/elasticsearch.fRxYOgPz, -XX:+HeapDumpOnOutOfMemoryError, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -Des.path.home=/Users/aub001n/Desktop/BMSCE/expertSystem/elasticsearch-6.2.3, -Des.path.conf=/Users/aub001n/Desktop/BMSCE/expertSystem/elasticsearch-6.2.3/config]
+[2018-05-09T07:26:03,972][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [aggs-matrix-stats]
+[2018-05-09T07:26:03,972][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [analysis-common]
+[2018-05-09T07:26:03,972][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [ingest-common]
+[2018-05-09T07:26:03,973][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-expression]
+[2018-05-09T07:26:03,973][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-mustache]
+[2018-05-09T07:26:03,973][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-painless]
+[2018-05-09T07:26:03,973][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [mapper-extras]
+[2018-05-09T07:26:03,973][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [parent-join]
+[2018-05-09T07:26:03,973][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [percolator]
+[2018-05-09T07:26:03,974][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [rank-eval]
+[2018-05-09T07:26:03,974][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [reindex]
+[2018-05-09T07:26:03,974][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [repository-url]
+[2018-05-09T07:26:03,974][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [transport-netty4]
+[2018-05-09T07:26:03,974][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [tribe]
+[2018-05-09T07:26:03,975][INFO ][o.e.p.PluginsService     ] [UeqWV9L] no plugins loaded
+[2018-05-09T07:26:05,867][INFO ][o.e.d.DiscoveryModule    ] [UeqWV9L] using discovery type [zen]
+[2018-05-09T07:26:06,269][INFO ][o.e.n.Node               ] initialized
+[2018-05-09T07:26:06,269][INFO ][o.e.n.Node               ] [UeqWV9L] starting ...
+[2018-05-09T07:26:06,417][INFO ][o.e.t.TransportService   ] [UeqWV9L] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-09T07:26:09,473][INFO ][o.e.c.s.MasterService    ] [UeqWV9L] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{4FUY9IoHTVaX2dQFQMLzXQ}{127.0.0.1}{127.0.0.1:9300}
+[2018-05-09T07:26:09,477][INFO ][o.e.c.s.ClusterApplierService] [UeqWV9L] new_master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{4FUY9IoHTVaX2dQFQMLzXQ}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{4FUY9IoHTVaX2dQFQMLzXQ}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-05-09T07:26:09,493][INFO ][o.e.h.n.Netty4HttpServerTransport] [UeqWV9L] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-09T07:26:09,494][INFO ][o.e.n.Node               ] [UeqWV9L] started
+[2018-05-09T07:26:09,529][INFO ][o.e.g.GatewayService     ] [UeqWV9L] recovered [0] indices into cluster_state
+[2018-05-09T07:27:25,502][INFO ][o.e.c.m.MetaDataCreateIndexService] [UeqWV9L] [ionic] creating index, cause [api], templates [], shards [1]/[0], mappings [fact]
+[2018-05-09T07:27:25,750][INFO ][o.e.c.r.a.AllocationService] [UeqWV9L] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[ionic][0]] ...]).
+[2018-05-09T07:29:53,046][INFO ][o.e.n.Node               ] [UeqWV9L] stopping ...
+[2018-05-09T07:29:53,246][INFO ][o.e.n.Node               ] [UeqWV9L] stopped
+[2018-05-09T07:29:53,246][INFO ][o.e.n.Node               ] [UeqWV9L] closing ...
+[2018-05-09T07:29:53,252][INFO ][o.e.n.Node               ] [UeqWV9L] closed
+[2018-05-09T07:38:24,272][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-09T07:38:24,353][INFO ][o.e.e.NodeEnvironment    ] [UeqWV9L] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [169.6gb], net total_space [233.5gb], types [apfs]
+[2018-05-09T07:38:24,354][INFO ][o.e.e.NodeEnvironment    ] [UeqWV9L] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-05-09T07:38:24,363][INFO ][o.e.n.Node               ] node name [UeqWV9L] derived from node ID [UeqWV9L_SNewuhESMrqh6g]; set [node.name] to override
+[2018-05-09T07:38:24,363][INFO ][o.e.n.Node               ] version[6.2.3], pid[5615], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.13.4/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/9.0.4/9.0.4+11]
+[2018-05-09T07:38:24,363][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/1g/jsdyfdfn3pjftjqpd6w10sfr5y75qs/T/elasticsearch.WMqOAxJs, -XX:+HeapDumpOnOutOfMemoryError, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -Des.path.home=/Users/aub001n/Desktop/BMSCE/expertSystem/elasticsearch-6.2.3, -Des.path.conf=/Users/aub001n/Desktop/BMSCE/expertSystem/elasticsearch-6.2.3/config]
+[2018-05-09T07:38:24,936][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [aggs-matrix-stats]
+[2018-05-09T07:38:24,936][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [analysis-common]
+[2018-05-09T07:38:24,937][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [ingest-common]
+[2018-05-09T07:38:24,937][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-expression]
+[2018-05-09T07:38:24,937][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-mustache]
+[2018-05-09T07:38:24,937][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-painless]
+[2018-05-09T07:38:24,937][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [mapper-extras]
+[2018-05-09T07:38:24,937][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [parent-join]
+[2018-05-09T07:38:24,937][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [percolator]
+[2018-05-09T07:38:24,938][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [rank-eval]
+[2018-05-09T07:38:24,938][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [reindex]
+[2018-05-09T07:38:24,938][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [repository-url]
+[2018-05-09T07:38:24,938][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [transport-netty4]
+[2018-05-09T07:38:24,938][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [tribe]
+[2018-05-09T07:38:24,939][INFO ][o.e.p.PluginsService     ] [UeqWV9L] no plugins loaded
+[2018-05-09T07:38:26,757][INFO ][o.e.d.DiscoveryModule    ] [UeqWV9L] using discovery type [zen]
+[2018-05-09T07:38:27,157][INFO ][o.e.n.Node               ] initialized
+[2018-05-09T07:38:27,157][INFO ][o.e.n.Node               ] [UeqWV9L] starting ...
+[2018-05-09T07:38:27,290][INFO ][o.e.t.TransportService   ] [UeqWV9L] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-09T07:38:30,341][INFO ][o.e.c.s.MasterService    ] [UeqWV9L] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{-hGovwciQYuWQucvMJgSwA}{127.0.0.1}{127.0.0.1:9300}
+[2018-05-09T07:38:30,345][INFO ][o.e.c.s.ClusterApplierService] [UeqWV9L] new_master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{-hGovwciQYuWQucvMJgSwA}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{-hGovwciQYuWQucvMJgSwA}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-05-09T07:38:30,362][INFO ][o.e.h.n.Netty4HttpServerTransport] [UeqWV9L] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-09T07:38:30,362][INFO ][o.e.n.Node               ] [UeqWV9L] started
+[2018-05-09T07:38:30,504][INFO ][o.e.g.GatewayService     ] [UeqWV9L] recovered [1] indices into cluster_state
+[2018-05-09T07:38:30,758][INFO ][o.e.c.r.a.AllocationService] [UeqWV9L] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[ionic][0]] ...]).
+[2018-05-09T07:41:05,120][INFO ][o.e.n.Node               ] [UeqWV9L] stopping ...
+[2018-05-09T07:41:05,267][INFO ][o.e.n.Node               ] [UeqWV9L] stopped
+[2018-05-09T07:41:05,268][INFO ][o.e.n.Node               ] [UeqWV9L] closing ...
+[2018-05-09T07:41:05,276][INFO ][o.e.n.Node               ] [UeqWV9L] closed
+[2018-05-09T08:16:05,319][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-09T08:16:05,411][INFO ][o.e.e.NodeEnvironment    ] [UeqWV9L] using [1] data paths, mounts [[/ (/dev/disk1s1)]], net usable_space [169.6gb], net total_space [233.5gb], types [apfs]
+[2018-05-09T08:16:05,411][INFO ][o.e.e.NodeEnvironment    ] [UeqWV9L] heap size [989.8mb], compressed ordinary object pointers [true]
+[2018-05-09T08:16:05,419][INFO ][o.e.n.Node               ] node name [UeqWV9L] derived from node ID [UeqWV9L_SNewuhESMrqh6g]; set [node.name] to override
+[2018-05-09T08:16:05,419][INFO ][o.e.n.Node               ] version[6.2.3], pid[5972], build[c59ff00/2018-03-13T10:06:29.741383Z], OS[Mac OS X/10.13.4/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/9.0.4/9.0.4+11]
+[2018-05-09T08:16:05,419][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/var/folders/1g/jsdyfdfn3pjftjqpd6w10sfr5y75qs/T/elasticsearch.izrDxBIs, -XX:+HeapDumpOnOutOfMemoryError, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Djava.locale.providers=COMPAT, -Des.path.home=/Users/aub001n/Desktop/BMSCE/expertSystem/elasticsearch-6.2.3, -Des.path.conf=/Users/aub001n/Desktop/BMSCE/expertSystem/elasticsearch-6.2.3/config]
+[2018-05-09T08:16:05,919][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [aggs-matrix-stats]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [analysis-common]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [ingest-common]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-expression]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-mustache]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [lang-painless]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [mapper-extras]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [parent-join]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [percolator]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [rank-eval]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [reindex]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [repository-url]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [transport-netty4]
+[2018-05-09T08:16:05,920][INFO ][o.e.p.PluginsService     ] [UeqWV9L] loaded module [tribe]
+[2018-05-09T08:16:05,921][INFO ][o.e.p.PluginsService     ] [UeqWV9L] no plugins loaded
+[2018-05-09T08:16:07,711][INFO ][o.e.d.DiscoveryModule    ] [UeqWV9L] using discovery type [zen]
+[2018-05-09T08:16:08,100][INFO ][o.e.n.Node               ] initialized
+[2018-05-09T08:16:08,101][INFO ][o.e.n.Node               ] [UeqWV9L] starting ...
+[2018-05-09T08:16:08,236][INFO ][o.e.t.TransportService   ] [UeqWV9L] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-09T08:16:11,285][INFO ][o.e.c.s.MasterService    ] [UeqWV9L] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{wDQIoTZLS_Ks7kscpvK0Wg}{127.0.0.1}{127.0.0.1:9300}
+[2018-05-09T08:16:11,289][INFO ][o.e.c.s.ClusterApplierService] [UeqWV9L] new_master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{wDQIoTZLS_Ks7kscpvK0Wg}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {UeqWV9L}{UeqWV9L_SNewuhESMrqh6g}{wDQIoTZLS_Ks7kscpvK0Wg}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-05-09T08:16:11,308][INFO ][o.e.h.n.Netty4HttpServerTransport] [UeqWV9L] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-09T08:16:11,309][INFO ][o.e.n.Node               ] [UeqWV9L] started
+[2018-05-09T08:16:11,466][INFO ][o.e.g.GatewayService     ] [UeqWV9L] recovered [1] indices into cluster_state
+[2018-05-09T08:16:11,726][INFO ][o.e.c.r.a.AllocationService] [UeqWV9L] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[ionic][0]] ...]).
+[2018-05-09T08:16:48,085][INFO ][o.e.c.m.MetaDataDeleteIndexService] [UeqWV9L] [ionic/Q8eCpR05STyvpUUJ3umkww] deleting index
+[2018-05-09T08:18:00,727][INFO ][o.e.c.m.MetaDataCreateIndexService] [UeqWV9L] [ionic] creating index, cause [api], templates [], shards [1]/[0], mappings [fact]
+[2018-05-09T08:18:00,912][INFO ][o.e.c.r.a.AllocationService] [UeqWV9L] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[ionic][0]] ...]).
+[2018-05-09T10:00:10,129][INFO ][o.e.n.Node               ] [UeqWV9L] stopping ...
+[2018-05-09T10:00:10,163][INFO ][o.e.n.Node               ] [UeqWV9L] stopped
+[2018-05-09T10:00:10,164][INFO ][o.e.n.Node               ] [UeqWV9L] closing ...
+[2018-05-09T10:00:10,170][INFO ][o.e.n.Node               ] [UeqWV9L] closed

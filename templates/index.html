@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <title>Expert system with feedback</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <style>
+  body{
+    padding: 20% 10%;
+  }
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
+  #QuestionContainer{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    margin: auto;
+    width: 80%;
+    padding: 5%;
+    font-size: 48px;
+    font-family: 'HelveticaNeue-Light';
+    align-items: flex-start;
+    align-content: space-around;
+    background-color: #f1c40f;
+  }
+  #Question{
+  padding: 1% 0%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  }
+  #QuestionField{
+    border: 0px;
+    align-self: center;
+    border-bottom: 2px solid;
+    background-color: #f1c40f;
+    font-size: 32px;
+    width: inherit;
+    width: 80%;
+    padding: 1%;
+  }
+  #AskQuestionText{
+    padding: 3% 0;
+    width: 100%;
+  }
+  #SubmitQuestion{
+    // background: url('ic_keyboard_arrow_right_white_24px.svg');
+    background-color: inherit;
+    border: 0px;
+    font-size: 48px;
+  }
+  </style>
+</head>
+<body>
+  <div id="QuestionContainer">
+    <div id="AskQuestionText">
+      Ask your question
+    </div>
+    <div id="Question">
+    <input type="text" id="QuestionField"></input>
+      &emsp;
+    <button id="SubmitQuestion" onclick="releaseTheKraken()">
+      &#x27a4;
+    </button>
+    </div>
+  </div>
+  <script>
+    function releaseTheKraken() {
+      var question = $('#QuestionField').val();
+      $('#QuestionContainer').css({
+        'transform': 'translate(-100vw, 0)',
+        'transition': 'transform 0.5s',
+        'transition-timing-function': 'ease-in'
+      });
+      $('body').load('/static/loader.html').css({'opacity': '0'}).animate({ opacity: 1 }, 1000);
+      $('head').append(`<link rel="stylesheet" href="/static/loader.css" type="text/css" />`);
+      setTimeout(function(){
+        // $.get("/question/" + question, function(data,status){
+        $.get("/question/" + question, function(data){
+         if(data != "No answer") {
+            $('body').animate({ opacity: 0, backgroundColor: "white"}, "slow");
+            $('head').append(`<link rel="stylesheet" href="/static/answers.css" type="text/css" />`);
+            setTimeout(function(){
+              $('body').html('<header>Choose what you like</header><br/><br/>');
+              data = data.substring(data.indexOf("below: ")).split(/(\d .)/).map(a=>a.trim());
+              for(let i = 2; i < data.length; i +=2 ) {
+                $('body').append('<div class="answer" id="' + data[i].substring(2, data[i].indexOf(', ') - 1) + '">' + data[i].substring(data[i].indexOf(', ') + 3, data[i].length - 2) + '</div>' );
+              }
+              $('div.answer').on('click', function() {
+                var id = $(this).attr('id');
+                $.get("/feedback/" + id, function(data, status) { if(status === 'success') $('body').html('<div class=\"answer\">Your response has been recorded</div>'); });
+              });
+               $('body').animate({ opacity: 1}, 700);
+            },2000);
+         }
+       });
+     },600);
+  }
+  </script>
+</body>

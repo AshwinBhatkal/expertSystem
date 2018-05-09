@@ -1,0 +1,31 @@
+.response {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 48px;
+  font-family: 'HelveticaNeue-UltraLight';
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  font-size: 36px;
+  font-family: 'HelveticaNeue-CondensedBold';
+}
+
+.answer {
+  margin: 4vh auto;
+  width: 80%;
+  padding: 4vh;
+  font-size: 24px;
+  text-align: center;
+  align-items: flex-start;
+  align-content: space-around;
+  background-color: #f1c40f;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  font-family: 'HelveticaNeue-Light';
+}
